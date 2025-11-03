@@ -98,14 +98,13 @@
 
 
 # ## 6) Capitalize 
-# # Method 1
-
+# # # Method 1
 
 # name = 'my name is shivam'
 
-# arr = name.split()
+# arr = name.split(" ")
 
-# new = []
+# new = ['My', 'Name', "Is", "Shivam"]
 
 # for i in arr:
 #     new.append(i.capitalize())
@@ -114,20 +113,20 @@
 # print(result)
 
 
-# # Method 2
+# # # Method 2
+# name = 'my name is shivam'
+
+# result = ""
+# for i in range(len(name)):
+
+#     if(i == 0 or name[i-1] == " "):
+#         result += name[i].upper()
+
+#     else:
+#         result += name[i]
+
+# print(result)
 
 
-name = 'my name is shivam'
-
-result = ""
-
-for i in range(len(name)):
-
-    if(i == 0 or name[i-1] == " "):
-        result += name[i].upper()
-
-    else:
-        result += name[i]
 
 
-print(result)
